@@ -6,6 +6,7 @@ function lshref(url) {
     //log(url);
     Apricot.open(url, function(doc) {
         doc.find('a').each(function(elem) {log(elem.href)});
+        doc.find('img').each(function(elem) {log(elem.src)});
     });
 }
 
